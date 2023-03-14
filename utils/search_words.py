@@ -60,7 +60,7 @@ def get_data(noun_str, spark):
     .format("csv")
     .option("header", "true")
     .option("delimiter", ";")
-    .load("/content/gdrive/MyDrive/colab_demo/Grocery_UPC_Database.csv")
+    .load("/content/gdrive/MyDrive/colab_demo_2023-main/Grocery_UPC_Database.csv")
     )
 
     grocery_items.registerTempTable("grocery_upc_database")
